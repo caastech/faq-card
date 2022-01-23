@@ -41,7 +41,22 @@ img {
 
 /* Container */
 
+.container {
+    min-height: inherit;
+    background-image: linear-gradient(var(--soft-violet),var(--soft-blue));
+
+    display: grid;
+    place-items: center;
+}
+
 /* Card Style */
+
+.card {
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 2em;
+    font-size: .7em;
+}
 
 /* Card img */
 
@@ -50,6 +65,30 @@ img {
 /* Card Content */
 
 /* Details Style */
+.detail-box {
+    background: red;
+}
+.detail-title {
+    list-style: none;
+    cursor: pointer;
+    width: inherit;
+    padding: 1em;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    max-width: .8em;
+}
+
+.detail-text {
+    background-color: khaki;
+    padding: 1em;
+    max-width: 36ch;
+}
 
 /* Toggle to change arrow position */
 .detail-box[open=""] {
