@@ -63,7 +63,6 @@ img {
     border-radius: 30px;
     padding: 2.5em 1.5em;
     font-size: .7em;
-
 }
 
 /* Card img */
@@ -97,13 +96,15 @@ img {
 
 /* Details Style */
 .detail-box {
-    background: red;
+    padding: .5em 0;
+    border-bottom: .12em solid var(--light-grayish) ;
 }
+
 .detail-title {
     list-style: none;
     cursor: pointer;
     width: inherit;
-    padding: 1em;
+    padding: 1em 0;
 
     display: flex;
     justify-content: space-between;
@@ -116,13 +117,16 @@ img {
 }
 
 .detail-text {
-    background-color: khaki;
-    padding: 1em;
-    max-width: 36ch;
+    padding: .5em 0 1em 0;
+    max-width: 34ch;
 }
 
 /* Toggle to change arrow position */
-.detail-box[open=""] {
-    background-color: brown;
+.detail-box[open=""] .logo {
+    transform: rotate(180deg);
+}
+
+.detail-box[open=""] .detail-title {
+    font-weight: 700;
 }
 
