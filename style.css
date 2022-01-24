@@ -75,7 +75,6 @@ img {
 }
 
 .img {
-    content: url('images/illustration-woman-online-mobile.svg');
     position: absolute;
     top:-10em;
     width: 100%;
@@ -112,6 +111,10 @@ img {
     gap: 10px;
 }
 
+.detail-title:hover {
+    color: var(--soft-red);
+}
+
 .logo {
     max-width: .8em;
 }
@@ -130,3 +133,31 @@ img {
     font-weight: 700;
 }
 
+@media (min-width:40rem) {
+    .container {
+        grid-template-columns: auto .5fr auto;
+        position: relative;
+    }
+
+    .card {
+        grid-column: 2;
+        background-image: url('images/bg-pattern-desktop.svg');
+        background-size: 60vw;
+        background-position: -30vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        min-width: 75vw;
+    }
+
+    .card-title {
+        text-align: left;
+        margin: 0;
+    }
+
+    .img {
+        position: static;
+        transform: translateX(-9.0vw);
+        min-width: min(100%,50vw);
+    }
+}
